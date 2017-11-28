@@ -15,13 +15,6 @@
         </rule>
     </pattern>
     
-    <!-- Constraints on /source/ -->
-    <pattern id="sourceEnforcement">
-        <rule context="tbx:admin[@type='source']">
-<assert test="preceding-sibling::tbx:descrip[@type='context'] or preceding-sibling::tbx:descrip[@type='definition'] or parent::tbx:termSec">/source/ can only be used with /context/, /definition/, or /term</assert>
-        </rule>
-    </pattern>
-    
     <!-- Min Module Rules -->
     <pattern id="module.min.admin">
         <rule context="tbx:admin[@type='customerSubset']">
