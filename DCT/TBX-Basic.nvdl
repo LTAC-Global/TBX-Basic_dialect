@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"
+    xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" startMode="core">
+    <mode name="core">
+        <namespace ns="urn:iso:std:iso:30042:ed:3.0">
+            <validate schema="https://raw.githubusercontent.com/LTAC-Global/TBX_Core_RNG/master/TBXcoreStructV03.rng" useMode="RNG"/>
+            <validate schema="TBX-Basic_DCT.sch" useMode="SCH"/>
+            <validate schema="https://raw.githubusercontent.com/LTAC-Global/TBX_basic_module/master/Basic.sch" useMode="SCH"/>
+            <validate schema="https://raw.githubusercontent.com/LTAC-Global/TBX_min_module/master/Min.sch" useMode="SCH"/>
+        </namespace>
+        <anyNamespace>
+            <!-- Since TBX-Micro dialect is defined as core TBX namespace + Section-8 Namespace, no other namespaces should be allowed -->
+            <reject/>
+        </anyNamespace>
+    </mode>
+    <mode name="RNG">
+        <namespace ns="http://www.tbxinfo.net/ns/dct/min">
+            <validate schema="https://raw.githubusercontent.com/LTAC-Global/TBX_min_module/master/Min.rng"/>
+            <attach/>
+        </namespace>
+        <namespace ns="http://www.tbxinfo.net/ns/dct/basic">
+            <validate schema="https://raw.githubusercontent.com/LTAC-Global/TBX_basic_module/master/Basic.rng"/>
+            <attach/>
+        </namespace>
+    </mode>
+    <mode name="SCH">
+        <namespace ns="http://www.tbxinfo.net/ns/dct/min">
+            <attach/>
+        </namespace>
+        <namespace ns="http://www.tbxinfo.net/ns/dct/basic">
+            <attach/>
+        </namespace>
+    </mode>
+</rules>
