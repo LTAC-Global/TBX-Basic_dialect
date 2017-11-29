@@ -1139,7 +1139,7 @@
                values of the "type" attribute.</p>
          </documentation>
          <value>administrativeStatus</value>
-         <value>gender</value>
+         <value>grammaticalGender</value>
          <value>geographicalUsage</value>
          <value>partOfSpeech</value>
          <value>termLocation</value>
