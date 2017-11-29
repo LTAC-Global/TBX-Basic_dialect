@@ -84,7 +84,7 @@ parent::tbx:langSec or parent::tbx:descripGrp/parent::tbx:langSec">
     </pattern>
     <pattern id="module.basic.xref">
         <rule context="tbx:xref[@type='externalCrossReference']">
-<assert test="parent::tbx:termSec">External Cross Reference may be used at the termSec level.</assert>
+<assert test="parent::tbx:termSec or parent::tbx:conceptEntry">External Cross Reference may be used at the termSec level.</assert>
         </rule>
         <rule context="tbx:xref[@type='xGraphic']">
 <assert test="parent::tbx:conceptEntry">Image must only be found at the conceptEntry level.</assert>
