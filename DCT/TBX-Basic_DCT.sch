@@ -7,9 +7,6 @@
         <rule context="tbx:termNote">
             <assert test="parent::tbx:termSec or parent::tbx:termNoteGrp/parent::tbx:termSec">Any termNote is only allowed at the termSec level.</assert>
         </rule>
-        <rule context="tbx:*[@type]">
-            <assert test="@type != ''">Data category must be declared.  If no permitted data categories are listed in the grammar schema, blank values are also not allowed.</assert>
-        </rule>
         <rule context="tbx:*[@metatype='termNote']">
             <assert test="parent::tbx:termSec or parent::tbx:termNoteGrp/parent::tbx:termSec">Any termNote is only allowed at the termSec level.</assert>
         </rule>
@@ -18,6 +15,9 @@
         <rule context="tbx:tbx">
             <assert test="attribute::type='TBX-Basic'">The name of this dialect should be TBX-Basic</assert>
             <assert test="attribute::style='dct'">The style of this dialect should be declared as 'dct'</assert>
+        </rule>
+        <rule context="tbx:*[@type]">
+            <assert test="not(matches(.,'|.')) or .. is root()">DCA style elements are not permitted in DCT style TBX.</assert>
         </rule>
     </pattern>
 </schema>
