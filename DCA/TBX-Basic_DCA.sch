@@ -16,8 +16,8 @@
             <assert test="attribute::type='TBX-Basic'">The name of this dialect should be TBX-Basic</assert>
             <assert test="attribute::style='dca'">The style of this dialect should be declared as 'dca'</assert>
         </rule>
-        <rule context="*">
-            <assert test="namespace::*[. = 'urn:iso:std:iso:30042:ed:3.0']">DCT style elements are not permitted in DCA style TBX.</assert>
+        <rule context="*[not(namespace-uri() = 'urn:iso:std:iso:30042:ed:3.0')]">
+            <assert test="false()">DCT style elements are not permitted in DCA style TBX.</assert>
         </rule>
     </pattern>
     
