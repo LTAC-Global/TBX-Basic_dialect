@@ -13,20 +13,20 @@
         </anyNamespace>
     </mode>
     <mode name="RNG">
-        <namespace ns="http://www.tbxinfo.net/ns/dct/min">
+        <namespace ns="http://www.tbxinfo.net/ns/min">
             <validate schema="https://raw.githubusercontent.com/LTAC-Global/TBX_min_module/master/Min.rng"/>
             <attach/>
         </namespace>
-        <namespace ns="http://www.tbxinfo.net/ns/dct/basic">
+        <namespace ns="http://www.tbxinfo.net/ns/basic">
             <validate schema="https://raw.githubusercontent.com/LTAC-Global/TBX_basic_module/master/Basic.rng"/>
             <attach/>
         </namespace>
     </mode>
     <mode name="SCH">
-        <namespace ns="http://www.tbxinfo.net/ns/dct/min">
+        <namespace ns="http://www.tbxinfo.net/ns/min">
             <attach/>
         </namespace>
-        <namespace ns="http://www.tbxinfo.net/ns/dct/basic">
+        <namespace ns="http://www.tbxinfo.net/ns/basic">
             <attach/>
         </namespace>
     </mode>
