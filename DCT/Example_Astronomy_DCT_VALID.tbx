@@ -57,7 +57,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Over 1100 open clusters are known in our Milky
 								Way Galaxy, and this is probably only a small percentage of the
@@ -71,7 +71,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>obsolete</min:administrativeStatus>
+						<min:administrativeStatus>supersededTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>In contrast, the galactic cluster represented by
 								M29 is a grouping of stars—a “knot” of stars in the stellar
@@ -179,7 +179,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>fullForm</basic:termType>
 						<descripGrp>
 							<basic:context>In contrast with the violence of merging, the
@@ -196,7 +196,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Accretion Disc Evolution in Single and Binary T
 								Tauri Stars</basic:context>
@@ -208,7 +208,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Our results suggest a scenario of a central star
 								accreting material from a circumstellar disc at the centre of a cool
@@ -249,7 +249,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Lo que alimenta esta actividad es el gas
 								extraído de la estrella normal, que, cayendo en espiral hacia el
@@ -262,7 +262,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Imágenes de estrellas jóvenes con discos de
 								acrecimeinto y chorros colimados de material, tomadas con el
@@ -789,7 +789,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>“Es como encontrar un pez fuera del agua”, dice
 								Ed Churchwell, profesor de astronomía de la Universidad de
@@ -806,7 +806,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Los cúmulos de estrellas se clasifican en dos
 								grupos: cúmulos abiertos, que no poseen forma definida, y cúmulos
@@ -1325,7 +1325,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Las últimas observaciones de las “rezagadas
 								azules”, estrellas atípicas que aparentan ser más jóvenes que el
@@ -1491,7 +1491,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>La explosión de una estrella binaria dentro de
 								una nebulosa planetaria ha sido capturado por un equipo dirigido por
@@ -1506,7 +1506,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Una estrella doble es una pareja de estrellas
 								que se mantienen unidas por la fuerza de la gravitación y giran en
@@ -2304,7 +2304,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>In this and other similar emission nebulae,
 								energetic ultraviolet light from a hot young star strips electrons
@@ -2495,7 +2495,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>There is no difference between a dark nebula and
 								a bright one, except for the lack of illumination.</basic:context>
@@ -2507,7 +2507,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>An absorption nebula is a dense cloud of dust
 								and gas. From the point of view of an observer on Earth, it absorbs
@@ -2548,7 +2548,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Aqui hay un mapa que muestra las regiones de
 								nebulosas oscuras que estan en un radio de 2000 años luz.</basic:context>
@@ -2560,7 +2560,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>El caso más opuesto a las nebulosas de emisión
 								son las nebulosas de absorción (nebulosas oscuras). Estas ni si
@@ -3118,7 +3118,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>fullForm</basic:termType>
 						<descripGrp>
 							<basic:context>The proton–proton chain reaction is one of
@@ -3133,7 +3133,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>shortForm</basic:termType>
 						<descripGrp>
 							<basic:context>The primary reactions in the main branch of the
@@ -3146,7 +3146,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>variant</basic:termType>
 						<descripGrp>
 							<basic:context>The gamma rays produced in the proton-proton
@@ -3270,7 +3270,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>variant</basic:termType>
 						<descripGrp>
 							<basic:context>The Helium burning process are important 1)
@@ -3284,7 +3284,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>shortForm</basic:termType>
 						<descripGrp>
 							<basic:context>For stars heavier than the sun, theoretical
@@ -3298,7 +3298,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>variant</basic:termType>
 						<descripGrp>
 							<basic:context>For stars heavier than the sun, theoretical
@@ -3312,7 +3312,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Dr. von Weizsäcker is best known in science for
 								what is sometimes called the Bethe-Weizsäcker cycle, proposed by him
@@ -3326,7 +3326,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>notRecommended</min:administrativeStatus>
+						<min:administrativeStatus>deprecatedTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>variant</basic:termType>
 						<descripGrp>
 							<basic:context>The main theme of the carbon cycle is the adding
@@ -3345,7 +3345,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>variant</basic:termType>
 						<descripGrp>
 							<basic:context>We argue that it may be possible to exploit
@@ -3402,7 +3402,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>shortForm</basic:termType>
 						<descripGrp>
 							<basic:context>Existen dos formas fundamentales en las que una
@@ -3416,7 +3416,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>notRecommended</min:administrativeStatus>
+						<min:administrativeStatus>deprecatedTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>fullForm</basic:termType>
 						<descripGrp>
 							<basic:context>No se pretende copiar los complicados ciclos de
@@ -3431,7 +3431,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>notRecommended</min:administrativeStatus>
+						<min:administrativeStatus>deprecatedTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>variant</basic:termType>
 						<descripGrp>
 							<basic:context>El ciclo del carbono comienza y acaba con un
@@ -3449,7 +3449,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>preferred</min:administrativeStatus>
+						<min:administrativeStatus>preferredTerm-admn-sts</min:administrativeStatus>
 						<basic:termType>variant</basic:termType>
 						<descripGrp>
 							<basic:context>En las estrellas de gran masa, que queman su
@@ -3654,7 +3654,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Es la principal responsable de la resistencia al
 								colapso gravitacional de las enanas blancas (degeneración de
@@ -3668,7 +3668,7 @@
 
 
 						<min:partOfSpeech>noun</min:partOfSpeech>
-						<min:administrativeStatus>admitted</min:administrativeStatus>
+						<min:administrativeStatus>admittedTerm-admn-sts</min:administrativeStatus>
 						<descripGrp>
 							<basic:context>Las fuerzas gravitatorias actuantes en un cuerpo
 								celeste masivo pueden comprimir su materia hasta un estado de
