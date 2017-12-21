@@ -11,6 +11,27 @@
         </rule>
     </pattern>
     
+    <pattern id="XLIFF.inlineConstraints">
+        <rule context="sc[following-sibling::ec]">
+            <assert test="@isolated='no' or not(@isolated)"></assert>
+        </rule>
+        <rule context="ec[preceding-sibling::sc]">
+            <assert test="@isolated='no' or not(@isolated)">@isolated must be 'no' if &lt;sc/&gt; or &lt;ec/&gt; has its corresponding &lt;sc/&gt;/&lt;ec/&gt; in the same note text and @startRef must be used for &lt;ec&gt;</assert>
+            <assert test="@startRef">@starRef is required for &lt;ec&gt; if it is in the same note text as its corresponding &lt;sc&gt;</assert>
+            <!--<assert test="not(@dir)">@dir only permitted when @isolated is 'yes'.</assert>--><!--@dir IS NOT CURRENTLY USED IN TBX-->
+        </rule>
+        <rule context="sc[not(following-sibling::ec)]">
+            <assert test="@isolated='yes' or not(@isolated)">@isolated must be 'yes' if &lt;sc/&gt; or &lt;ec/&gt; does not have its corresponding &lt;sc/&gt;/&lt;sc/&gt; in the same note text</assert>
+        </rule>
+        <rule context="ec[not(preceding-sibling::sc)]">
+            <assert test="@isolated='yes' or not(@isolated)">@isolated must be 'yes' if &lt;sc/&gt; or &lt;ec/&gt; does not have its corresponding &lt;sc/&gt;/&lt;sc/&gt; in the same note text</assert>
+            <assert test="@id">@id is REQUIRED when @isolated is or should be 'yes'.</assert>
+        </rule>
+        <rule context="ec[@isolated='yes']">
+            <assert test="@id != ''">ID is required if @isolated is 'yes'.</assert>
+        </rule>
+    </pattern>
+    
     <pattern id="dialectEnforcement">
         <rule context="tbx:tbx">
             <assert test="attribute::type='TBX-Basic'">The name of this dialect should be TBX-Basic</assert>
