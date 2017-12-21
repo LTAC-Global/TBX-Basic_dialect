@@ -91,7 +91,6 @@
    <define name="id.attribute.id">
       <optional>
          <attribute name="id">
-
             <data type="ID"/>
          </attribute>
       </optional>
@@ -102,7 +101,6 @@
    <define name="target-IDREF.attribute.target">
       <optional>
          <attribute name="target">
-
             <data type="IDREF"/>
          </attribute>
       </optional>
@@ -136,16 +134,52 @@
          </attribute>
       </optional>
    </define>
-   <define name="subtype.attribute">
+   <define name="dispEquivSubType.attributes">
       <optional>
-         <attribute name="subType">
+         <attribute name="disp">
             <text/>
          </attribute>
+         <attribute name="equiv">
+            <text/>
+         </attribute>
+         <choice>
+              <group>
+                 <attribute name="subType">
+                    <data type="string">
+                       <param name="pattern">[^\s:]+:[^\s:]+</param>
+                    </data>
+                 </attribute>
+                 <ref name="XLIFFinlineType.attribute"/>
+              </group>
+            <ref name="XLIFFinlineType.attribute"/>
+         </choice>
       </optional>
+   </define>
+   <define name="XLIFFisolated.attribute">
+      <optional>
+       <attribute name="isolated">
+          <choice>
+             <value>yes</value>
+             <value>no</value>
+          </choice>
+       </attribute>
+      </optional>
+   </define>
+   <define name="XLIFFinlineType.attribute">
+      <attribute name="type">
+         <choice>
+            <value>fmt</value>
+            <value>ui</value>
+            <value>quote</value>
+            <value>link</value>
+            <value>image</value>
+            <value>other</value>
+         </choice>
+      </attribute>
    </define>
    <define name="hi">
       <element name="hi">
-
+         
          <ref name="hi.content"/>
          <ref name="hi.localattributes"/>
       </element>
@@ -158,7 +192,7 @@
       <ref name="lang.attributes"/>
       <optional>
          <attribute name="type">
-
+            
             <choice>
                <value>entailedTerm</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
@@ -201,7 +235,7 @@
    </define>
    <define name="foreign">
       <element name="foreign">
-
+         
          <ref name="foreign.content"/>
          <ref name="foreign.localattributes"/>
       </element>
@@ -214,61 +248,67 @@
    </define>
    <define name="sc">
       <element name="sc">
-
+         
          <ref name="sc.content"/>
          <ref name="sc.localattributes"/>
       </element>
    </define>
    <define name="sc.content">
-      <text/>
+      <empty/>
    </define>
    <define name="sc.localattributes">
-      <ref name="idtype.attributes"/>
+      <attribute name="id">
+         <data type="ID"/>
+      </attribute>
       <optional>
-         <ref name="subtype.attribute"/>
+         <ref name="dispEquivSubType.attributes"/>
          <ref name="target-IDREF.attributes"/>
+         <ref name="XLIFFisolated.attribute"/>
       </optional>
    </define>
    <define name="ec">
       <element name="ec">
-
+         
          <ref name="ec.content"/>
          <ref name="ec.localattributes"/>
       </element>
    </define>
    <define name="ec.content">
-      <text/>
+      <empty/>
    </define>
    <define name="ec.localattributes">
       <optional>
-         <attribute name="startRef">
-            <text/>
-         </attribute>
-         <ref name="idtype.attributes"/>
-         <ref name="subtype.attribute"/>
-         <ref name="target-IDREF.attributes"/>
+            <attribute name="id">
+               <data type="ID"/>
+            </attribute>
+            <attribute name="startRef">
+               <data type="IDREF"/>
+            </attribute>
+            <ref name="dispEquivSubType.attributes"/>
+            <ref name="XLIFFisolated.attribute"/>
+            <ref name="target-IDREF.attributes"/>
       </optional>
    </define>
    <define name="ph">
       <element name="ph">
-
          <ref name="ph.content"/>
          <ref name="ph.localattributes"/>
       </element>
    </define>
    <define name="ph.content">
-      <text/>
+      <empty/>
    </define>
    <define name="ph.localattributes">
       <optional>
-         <attribute name="type">
-            <text/>
+         <attribute name="id">
+            <data type="ID"/>
          </attribute>
+         <ref name="dispEquivSubType.attributes"/>
       </optional>
    </define>
    <define name="admin">
       <element name="admin">
-
+         
          <ref name="admin.content"/>
          <ref name="admin.localattributes"/>
       </element>
@@ -282,15 +322,15 @@
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indicates
             the data-category type of the admin element, such as originatingDatabase or
             entrySource.</a:documentation>
-
-         <ref name="admin.types"/>
-
+         
+            <ref name="admin.types"/>
+         
       </attribute>
       <ref name="dca.attributes"/>
    </define>
    <define name="adminGrp">
       <element name="adminGrp">
-
+         
          <ref name="adminGrp.content"/>
          <ref name="adminGrp.localattributes"/>
       </element>
@@ -324,7 +364,7 @@
    </define>
    <define name="adminNote">
       <element name="adminNote">
-
+         
          <ref name="adminNote.content"/>
          <ref name="adminNote.localattributes"/>
       </element>
@@ -335,16 +375,16 @@
    <define name="adminNote.localattributes">
       <ref name="IDLangTgtDtyp.attributes"/>
       <attribute name="type">
-
-
-         <ref name="adminNote.types"/>
-
+         
+         
+            <ref name="adminNote.types"/>
+         
       </attribute>
       <ref name="dca.attributes"/>
    </define>
    <define name="date">
       <element name="date">
-
+         
          <ref name="date.content"/>
          <ref name="date.localattributes"/>
       </element>
@@ -357,7 +397,7 @@
    </define>
    <define name="descrip">
       <element name="descrip">
-
+         
          <ref name="descrip.content"/>
          <ref name="descrip.localattributes"/>
       </element>
@@ -371,15 +411,15 @@
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indicates
             the data-category type of the descrip element, such as definition or
             associated-concept.</a:documentation>
-
-         <ref name="descrip.types"/>
-
+         
+            <ref name="descrip.types"/>
+         
       </attribute>
       <ref name="dca.attributes"/>
    </define>
    <define name="descripGrp">
       <element name="descripGrp">
-
+         
          <ref name="descripGrp.content"/>
          <ref name="descripGrp.localattributes"/>
       </element>
@@ -418,7 +458,7 @@
    </define>
    <define name="descripNote">
       <element name="descripNote">
-
+         
          <ref name="descripNote.content"/>
          <ref name="descripNote.localattributes"/>
       </element>
@@ -432,15 +472,15 @@
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indicates
             the data-category type of the descripNote element, such as
             contextType.</a:documentation>
-
-         <ref name="descripNote.types"/>
-
+         
+            <ref name="descripNote.types"/>
+         
       </attribute>
       <ref name="dca.attributes"/>
    </define>
    <define name="langSec">
       <element name="langSec">
-
+         
          <ref name="langSec.content"/>
          <ref name="langSec.localattributes"/>
       </element>
@@ -463,7 +503,7 @@
    </define>
    <define name="note">
       <element name="note">
-
+         
          <ref name="note.content"/>
          <ref name="note.localattributes"/>
       </element>
@@ -476,7 +516,7 @@
    </define>
    <define name="ref">
       <element name="ref">
-
+         
          <ref name="ref.content"/>
          <ref name="ref.localattributes"/>
       </element>
@@ -487,10 +527,10 @@
    <define name="ref.localattributes">
       <ref name="IDLangTgtDtyp.attributes"/>
       <attribute name="type">
-
-
-         <ref name="ref.types"/>
-
+         
+         
+            <ref name="ref.types"/>
+         
       </attribute>
       <ref name="dca.attributes"/>
    </define>
@@ -508,7 +548,7 @@
    </define>
    <define name="conceptEntry">
       <element name="conceptEntry">
-
+         
          <ref name="conceptEntry.content"/>
          <ref name="conceptEntry.localattributes"/>
       </element>
@@ -537,7 +577,7 @@
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indicates
             the data-category type of the termNote, such as partOfSpeech or
             termType.</a:documentation>
-         <ref name="termNote.types"/>
+            <ref name="termNote.types"/>
       </attribute>
       <ref name="dca.attributes"/>
    </define>
@@ -596,7 +636,7 @@
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The
             attribute value transactionType ensures that the content of the transac element will be
             a transaction type.</a:documentation>
-         <ref name="transac.types"/>
+            <ref name="transac.types"/>
       </attribute>
       <ref name="dca.attributes"/>
    </define>
@@ -637,7 +677,7 @@
    </define>
    <define name="transacNote">
       <element name="transacNote">
-
+         
          <ref name="transacNote.content"/>
          <ref name="transacNote.localattributes"/>
       </element>
@@ -648,7 +688,7 @@
    <define name="transacNote.localattributes">
       <ref name="IDLangTgtDtyp.attributes"/>
       <attribute name="type">
-         <ref name="transacNote.types"/>
+            <ref name="transacNote.types"/>
       </attribute>
       <ref name="dca.attributes"/>
    </define>
@@ -671,7 +711,7 @@
          </data>
       </attribute>
       <attribute name="type">
-         <ref name="xref.types"/>
+            <ref name="xref.types"/>
       </attribute>
       <ref name="dca.attributes"/>
    </define>
@@ -733,7 +773,7 @@
    </define>
    <define name="p">
       <element name="p">
-
+         
          <ref name="p.content"/>
          <ref name="p.localattributes"/>
       </element>
@@ -751,7 +791,7 @@
    </define>
    <define name="fileDesc">
       <element name="fileDesc">
-
+         
          <ref name="fileDesc.content"/>
          <ref name="fileDesc.localattributes"/>
       </element>
@@ -772,7 +812,7 @@
    </define>
    <define name="titleStmt">
       <element name="titleStmt">
-
+         
          <ref name="titleStmt.content"/>
          <ref name="titleStmt.localattributes"/>
       </element>
@@ -788,7 +828,7 @@
    </define>
    <define name="title">
       <element name="title">
-
+         
          <ref name="title.content"/>
          <ref name="title.localattributes"/>
       </element>
@@ -801,7 +841,7 @@
    </define>
    <define name="publicationStmt">
       <element name="publicationStmt">
-
+         
          <ref name="publicationStmt.content"/>
          <ref name="publicationStmt.localattributes"/>
       </element>
@@ -830,7 +870,7 @@
    </define>
    <define name="encodingDesc">
       <element name="encodingDesc">
-
+         
          <ref name="encodingDesc.content"/>
          <ref name="encodingDesc.localattributes"/>
       </element>
@@ -845,7 +885,7 @@
    </define>
    <define name="revisionDesc">
       <element name="revisionDesc">
-
+         
          <ref name="revisionDesc.content"/>
          <ref name="revisionDesc.localattributes"/>
       </element>
@@ -860,7 +900,7 @@
    </define>
    <define name="change">
       <element name="change">
-
+         
          <ref name="change.content"/>
          <ref name="change.localattributes"/>
       </element>
@@ -875,7 +915,7 @@
    </define>
    <define name="text">
       <element name="text">
-
+         
          <ref name="text.content"/>
          <ref name="text.localattributes"/>
       </element>
@@ -891,7 +931,7 @@
    </define>
    <define name="body">
       <element name="body">
-
+         
          <ref name="body.content"/>
          <ref name="body.localattributes"/>
       </element>
@@ -906,7 +946,7 @@
    </define>
    <define name="back">
       <element name="back">
-
+         
          <ref name="back.content"/>
          <ref name="back.localattributes"/>
       </element>
@@ -921,7 +961,7 @@
    </define>
    <define name="refObjectSec">
       <element name="refObjectSec">
-
+         
          <ref name="refObjectSec.content"/>
          <ref name="refObjectSec.localattributes"/>
       </element>
@@ -957,7 +997,7 @@
    </define>
    <define name="item">
       <element name="item">
-
+         
          <ref name="item.content"/>
          <ref name="item.localattributes"/>
       </element>
@@ -970,7 +1010,7 @@
    </define>
    <define name="itemGrp">
       <element name="itemGrp">
-
+         
          <ref name="itemGrp.content"/>
          <ref name="itemGrp.localattributes"/>
       </element>
@@ -984,7 +1024,7 @@
    </define>
    <define name="itemSet">
       <element name="itemSet">
-
+         
          <ref name="itemSet.content"/>
          <ref name="itemSet.localattributes"/>
       </element>
