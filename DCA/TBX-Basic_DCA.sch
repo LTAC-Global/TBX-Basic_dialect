@@ -9,6 +9,9 @@
         <rule context="tbx:*[@type]">
             <assert test="@type != ''">Data category must be declared.  If no permitted data categories are listed in the grammar schema, blank values are also not allowed.</assert>
         </rule>
+        <rule context="*[@target]">
+            <assert test="matches(@target,'https?://.+') or @target = //*/@id">ID must be IDREF for internal references or URI following HTTP protocol for external references.</assert>
+        </rule>
     </pattern>
     
     <pattern id="XLIFF.inlineConstraints">

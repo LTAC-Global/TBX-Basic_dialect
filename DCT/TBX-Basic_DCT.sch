@@ -10,6 +10,9 @@
         <rule context="tbx:*[@metatype='termNote']">
             <assert test="parent::tbx:termSec or parent::tbx:termNoteGrp/parent::tbx:termSec">Any termNote is only allowed at the termSec level.</assert>
         </rule>
+        <rule context="*[@target]">
+            <assert test="matches(@target,'https?://.+') or @target = //*/@id">ID must be IDREF for internal references or URI following HTTP protocol for external references.</assert>
+        </rule>
     </pattern>
     
     <pattern id="XLIFF.inlineConstraints">
