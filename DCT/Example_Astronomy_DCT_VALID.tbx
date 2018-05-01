@@ -23,7 +23,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Galaxy_cluster#/media/File:Galaxy_cluster_IDCS_J1426.jpg">Open_Cluster.JPG</basic:xGraphic>
 				<note>G-Source: http://www.physics.drexel.edu/observatory/dump.shtml</note>
 				<langSec xml:lang="en">
@@ -134,7 +134,7 @@
 					<date>2010-04-24</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Birth</basic:subjectField>
+				<min:subjectField>Stellar Birth</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Accretion_disk#/media/File:Star_with_accretion_disk.jpg">Accretion_Disk.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://www.cfht.hawaii.edu/Instruments/Spectroscopy/Espadons/www.ast.obs-mip.fr/users/donati/press/fuori_eng.html</note>
@@ -286,7 +286,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Death</basic:subjectField>
+				<min:subjectField>Stellar Death</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Black_hole#/media/File:BH_LMC.png">Black_Hole.jpg</basic:xGraphic>
 				<note>G-Source: http://wallpaper-s.org/12__Supermassive_Black_Hole.htm</note>
 				<langSec xml:lang="en">
@@ -365,7 +365,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Gamma-ray_burst#/media/File:GRB080319B_illustration_NASA.jpg">Gamma_Ray_Burst.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://nakedmaninthetree.wordpress.com/2009/02/22/galaxies-and-the-future/</note>
@@ -490,7 +490,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Globular_cluster#/media/File:A_Swarm_of_Ancient_Stars_-_GPN-2000-000930.jpg">Globular_Cluster.jpg</basic:xGraphic>
 				<note>G-Source: http://www.astrographics.com/GalleryPrintsIndex/GP0046.html</note>
 				<langSec xml:lang="en">
@@ -570,7 +570,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Main_sequence#/media/File:HRDiagram.png">Main_Sequence.jpg</basic:xGraphic>
 				<note>G-Source: http://www.skyofplenty.com/?page_id=374</note>
 				<langSec xml:lang="en">
@@ -648,7 +648,7 @@
 					<date>2010-04-24</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Birth</basic:subjectField>
+				<min:subjectField>Stellar Birth</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Protostar#/media/File:A_diamond_in_the_dust.jpg">Protostar.JPG</basic:xGraphic>
 				<note>G-Source: http://www.konkoly.hu/KISAG/Science/star/star_intro.html</note>
 				<langSec xml:lang="en">
@@ -724,7 +724,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Star_cluster#/media/File:M92_arp_750pix.jpg">Star_Cluster.jpg</basic:xGraphic>
 				<note>G-Source: http://apod.nasa.gov/apod/ap060109.html</note>
 				<langSec xml:lang="en">
@@ -832,7 +832,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Milky_Way#/media/File:ESO-VLT-Laser-phot-33a-07.jpg">Milky_Way.jpg</basic:xGraphic>
 				<note>G-Source: http://www.cfa.harvard.edu/~afrebel/milky-way-2.jpg</note>
 				<langSec xml:lang="en">
@@ -990,7 +990,7 @@
 					<date>2010-04-24</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Star#/media/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg">Star.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://lh4.ggpht.com/_EuutPdvjcY0/SQ2jGBKWO7I/AAAAAAAAALM/gjDMVimDQc8/005Est.jpg</note>
@@ -1068,7 +1068,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Ultraviolet#/media/File:UV_LED_Fluoresence.jpg">UV_Radiation.jpg</basic:xGraphic>
 				<note>G-Source: http://drdima.files.wordpress.com/2009/05/sun-rays.jpg</note>
 				<langSec xml:lang="en">
@@ -1191,7 +1191,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Magnetic_field#/media/File:VFPt_magnets_BHM.svg">Magnetic_Field.jpg</basic:xGraphic>
 				<note>G-Source: http://www.greatdreams.com/magnet1.jpg</note>
 				<langSec xml:lang="en">
@@ -1268,7 +1268,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Blue_straggler#/media/File:Ngc6397_hst_blue_straggler.jpg">Blue_Straggler.jpg</basic:xGraphic>
 				<note>G-Source: http://images.spaceref.com/news/2009/ooBlue_Straggler09.jpg</note>
 				<langSec xml:lang="en">
@@ -1350,7 +1350,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<langSec xml:lang="en">
 					<transacGrp>
 						<basic:transactionType>origination</basic:transactionType>
@@ -1427,7 +1427,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Binary_star#/media/File:Algol_AB_movie_imaged_with_the_CHARA_interferometer_-_labeled.gif">Binary_Star.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://lh6.ggpht.com/_6hgSmco4R9M/SaqplXGqJfI/AAAAAAAAA1k/B3a43_O9VI8/56_Binary_Stars_thumb3.jpg</note>
@@ -1530,7 +1530,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Birth</basic:subjectField>
+				<min:subjectField>Stellar Birth</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Initial_mass_function#/media/File:LH_95.jpg">Initial_Mass_Function.JPG</basic:xGraphic>
 				<note>G-Source:
 					http://www.astro.ljmu.ac.uk/~ikb/research/imf-use-in-cosmology.html</note>
@@ -1761,7 +1761,7 @@
 					<date>2010-04-24</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Death</basic:subjectField>
+				<min:subjectField>Stellar Death</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Supernova#/media/File:SN1994D.jpg">Supernova.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://jcconwell.wordpress.com/2009/07/24/top-10-ways-the-universe-could-kill-us/supernova/</note>
@@ -1876,7 +1876,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Red_giant#/media/File:Mira_1997.jpg">Red_Giant.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://www.lcsd.gov.hk/CE/Museum/Space/EducationResource/Universe/framed_e/lecture/ch15/imgs/red_size.jpg</note>
@@ -1960,7 +1960,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Red_dwarf#/media/File:New_shot_of_Proxima_Centauri,_our_nearest_neighbour.jpg">Red_Dwarf.jpg</basic:xGraphic>
 				<note>G-Source: http://www.wolflodge.org/bluestar/h_red_dwarf_02.jpg</note>
 				<langSec xml:lang="en">
@@ -2035,7 +2035,7 @@
 					<date>2010-04-24</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Stellar_classification#/media/File:Zeta_Puppis.png">Spectral_Type.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://www.astro.columbia.edu/~archung/labs/spring2002/images/spectral_type2.jpg</note>
@@ -2114,7 +2114,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/White_dwarf#/media/File:Sirius_A_and_B_Hubble_photo.editted.PNG">White_Dwarf.jpg</basic:xGraphic>
 				<note>G-Source: http://www.stsci.edu/~inr/thisweek1/thisweek/WhiteDwarf.gif</note>
 				<langSec xml:lang="en">
@@ -2195,7 +2195,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Planetary_nebula#/media/File:NGC6543.jpg">Planetary_Nebula.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://www.phys.ncku.edu.tw/~astrolab/mirrors/apod_e/image/0901/ngc2818_hheritage_800.jpg</note>
@@ -2277,7 +2277,7 @@
 					<date>2010-04-24</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Birth</basic:subjectField>
+				<min:subjectField>Stellar Birth</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Emission_nebula#/media/File:Ring_Nebula.jpg">Emission_Nebula.jpg</basic:xGraphic>
 				<note>G-Source: http://apod.nasa.gov/apod/image/0612/NGC2174_lrg.jpg</note>
 				<langSec xml:lang="en">
@@ -2358,7 +2358,7 @@
 					<date>2010-04-24</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Nebula#/media/File:Eagle_nebula_pillars.jpg">Nebula.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://my-blackberry.net/wallpapers/49/m/NASA_-_The_Horsehead_Nebula%2C_B33%2C_Orion_Nebula.jpg</note>
@@ -2461,7 +2461,7 @@
 					<date>2010-04-29</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Birth</basic:subjectField>
+				<min:subjectField>Stellar Birth</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Dark_nebula#/media/File:All_Quiet_in_the_Nursery%3F.jpg">Dark_Nebula.jpg</basic:xGraphic>
 				<note>G-Source: http://www.mallorcaweb.net/masm/obstel/caballo.GIF</note>
 				<langSec xml:lang="en">
@@ -2586,7 +2586,7 @@
 					<date>2010-04-28</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Birth</basic:subjectField>
+				<min:subjectField>Stellar Birth</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Reflection_nebula#/media/File:Reflection.nebula.arp.750pix.jpg">Reflection_Nebula.jpeg</basic:xGraphic>
 				<note>G-Source:
 					http://mm04.nasaimages.org/MediaManager/srvr?mediafile=/Size3/NVA2-8-NA/14107/full_tif.jpg&amp;userid=1&amp;username=admin&amp;resolution=3&amp;servertype=JVA&amp;cid=8&amp;iid=NVA2&amp;vcid=NA&amp;usergroup=HUBBLE&amp;profileid=39</note>
@@ -2663,7 +2663,7 @@
 					<date>2010-04-29</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Neutron_star#/media/File:PIA18848-PSRB1509-58-ChandraXRay-WiseIR-20141023.jpg">Neutron_Star.jpg</basic:xGraphic>
 				<note>G-Source: http://nrumiano.free.fr/Images/Neutron_star_E.gif</note>
 				<langSec xml:lang="en">
@@ -2737,7 +2737,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Death</basic:subjectField>
+				<min:subjectField>Stellar Death</min:subjectField>
 				<langSec xml:lang="en">
 					<transacGrp>
 						<basic:transactionType>origination</basic:transactionType>
@@ -2819,7 +2819,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Death</basic:subjectField>
+				<min:subjectField>Stellar Death</min:subjectField>
 				<langSec xml:lang="en">
 					<transacGrp>
 						<basic:transactionType>origination</basic:transactionType>
@@ -2899,7 +2899,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Event_horizon#/media/File:Spacetime_lattice_analogy.svg">Event_Horizon.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://www.astro.cornell.edu/academics/courses/astro2201/images/bh_structure.gif</note>
@@ -2980,7 +2980,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Death</basic:subjectField>
+				<min:subjectField>Stellar Death</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Event_horizon#/media/File:Spacetime_lattice_analogy.svg">Event_Horizon.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://www.astro.cornell.edu/academics/courses/astro2201/images/bh_structure.gif</note>
@@ -3080,7 +3080,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Proton%E2%80%93proton_chain_reaction#/media/File:Fusion_in_the_Sun.svg">PP_Chain.jpg</basic:xGraphic>
 				<note>G-Source: http://en.wikipedia.org/wiki/File:FusionintheSun.svg</note>
 				<langSec xml:lang="en">
@@ -3202,7 +3202,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/CNO_cycle#/media/File:CNO_cycle.png">CNO_Cycle.jpg</basic:xGraphic>
 				<note>G-Source: http://en.wikipedia.org/wiki/File:CNO_Cycle.svg</note>
 				<langSec xml:lang="en">
@@ -3474,7 +3474,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<langSec xml:lang="en">
 					<transacGrp>
 						<basic:transactionType>origination</basic:transactionType>
@@ -3587,7 +3587,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>Stellar Death</basic:subjectField>
+				<min:subjectField>Stellar Death</min:subjectField>
 				<langSec xml:lang="en">
 					<transacGrp>
 						<basic:transactionType>origination</basic:transactionType>
@@ -3693,7 +3693,7 @@
 					<date>2010-05-01</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Event_horizon#/media/File:Spacetime_lattice_analogy.svg">Event_Horizon.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://www.astro.cornell.edu/academics/courses/astro2201/images/bh_structure.gif</note>
@@ -3773,7 +3773,7 @@
 					<date>2010-04-29</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Solar_mass#/media/File:Rho_Cassiopeiae_Sol_VY_Canis_Majoris.png">Solar_Mass.jpg</basic:xGraphic>
 				<note>G-Source: http://en.wikipedia.org/wiki/Solar_mass</note>
 				<note>In this graphic, the M with a subscript is the symbol for a solar mass.</note>
@@ -3842,7 +3842,7 @@
 
 
 			<conceptEntry id="c44">
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<transacGrp>
 					<basic:transactionType>origination</basic:transactionType>
 					<date>2010-04-29</date>
@@ -3936,7 +3936,7 @@
 					<date>2010-04-29</date>
 					<basic:responsibility target="pe324as3-9615-4d41-a9c8-30c36bffe0e6">Tommy</basic:responsibility>
 				</transacGrp>
-				<basic:subjectField>General</basic:subjectField>
+				<min:subjectField>General</min:subjectField>
 				<basic:xGraphic target="https://en.wikipedia.org/wiki/Black_dwarf#/media/File:Black_dwarf.jpg">Black_Dwarf.jpg</basic:xGraphic>
 				<note>G-Source:
 					http://www.dorlingkindersley-uk.co.uk/static/clipart/uk/dk/sci_space/image_sci_space013.jpg</note>

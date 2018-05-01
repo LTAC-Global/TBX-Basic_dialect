@@ -68,7 +68,8 @@
     <!-- Basic Module Rules -->
     <pattern id="module.basic.admin">
         <rule context="tbx:admin[@type='projectSubset']">
-<assert test="parent::tbx:termSec or parent::tbx:adminGrp/parent::tbx:termSec">Project may only appear at the termSec level</assert>
+<assert test="parent::tbx:conceptEntry or parent::adminGrp/parent::tbx:conceptEntry or
+    parent::tbx:termSec or parent::tbx:adminGrp/parent::tbx:termSec">Project may only appear at the conceptEntry or termSec levels</assert>
         </rule>
     </pattern>
     <pattern id="module.basic.descrip">
@@ -80,9 +81,6 @@
 parent::tbx:langSec or parent::tbx:descripGrp/parent::tbx:langSec">
     Definition may appear at the conceptEntry or langSec levels.
 </assert>
-        </rule>
-        <rule context="tbx:descrip[@type='subjectField']">
-<assert test="parent::tbx:conceptEntry or parent::tbx:descripGrp/parent::tbx:conceptEntry">Subject Field may appear only at the conceptEntry level</assert>
         </rule>
     </pattern>
     <pattern id="module.basic.termNote">
