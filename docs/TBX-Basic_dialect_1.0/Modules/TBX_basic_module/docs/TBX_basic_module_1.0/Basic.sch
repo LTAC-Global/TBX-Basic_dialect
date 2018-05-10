@@ -8,8 +8,7 @@
     <!-- Basic Module Rules -->
     <pattern id="module.basic.admin">
         <rule context="basic:projectSubset">
-            <assert test="parent::tbx:conceptEntry or parent::tbx:adminGrp/parent::tbx:conceptEntry or
-                parent::tbx:termSec or parent::tbx:adminGrp/parent::tbx:termSec">Project may only appear at the conceptEntry or termSec levels</assert>
+            <assert test="parent::tbx:conceptEntry or parent::tbx:termSec or parent::tbx:adminGrp/(parent::tbx:conceptEntry or parent::tbx:termSec)">Project may only appear at the conceptEntry or termSec levels</assert>
         </rule>
         <rule context="basic:source">
             <assert test="parent::tbx:conceptEntry or parent::tbx:langSec or parent::tbx:termSec or parent::tbx:descripGrp/(parent::tbx:conceptEntry or parent::tbx:langSec or parent::tbx:termSec)"></assert>
@@ -34,27 +33,28 @@
     
     <pattern id="module.basic.transac">
         <rule context="basic:transactionType">
-            <assert test="parent::tbx:conceptEntry or parent::tbx:langSec or parent::tbx:transacGrp/(parent::tbx:conceptEntry or parent::tbx:langSec)">Transaction type may be either 'origination' or 'modification'.</assert>
+            <assert test="parent::tbx:conceptEntry or parent::tbx:langSec or parent::tbx:termSec 
+                or parent::tbx:transacGrp/(parent::tbx:conceptEntry or parent::tbx:langSec or parent::tbx:termSec)">Transaction type may be either 'origination' or 'modification'.</assert>
         </rule>
     </pattern>
     
     <pattern id="module.basic.transacNote">
         <rule context="basic:responsibility">
-            <assert test="parent::tbx:transacGrp/(parent::tbx:conceptEntry or parent::tbx:langSec)">Responsibility must be in a transacGrp at the conceptEntry or langSec levels.</assert>
+            <assert test="parent::tbx:transacGrp/(parent::tbx:conceptEntry or parent::tbx:langSec or parent::tbx:termSec)">Responsibility must be in a transacGrp at the conceptEntry or langSec levels.</assert>
         </rule>
     </pattern>
     
     <pattern id="module.basic.ref">
         <rule context="basic:crossReference">
-            <assert test="parent::tbx:conceptEntry or parent::tbx:termSec">Cross References must only be found at the conceptEntry or termSec levels.</assert>
+            <assert test="parent::tbx:conceptEntry or parent::tbx:termSec or parent::tbx:*[contains(.,Grp)]/(parent::tbx:conceptEntry or parent::tbx:termSec)">Cross References must only be found at the conceptEntry or termSec levels.</assert>
         </rule>
     </pattern>
     <pattern id="module.basic.xref">
         <rule context="basic:externalCrossReference">
-            <assert test="parent::tbx:conceptEntry or parent::tbx:termSec">External Cross Reference may be used at the termSec level.</assert>
+            <assert test="parent::tbx:conceptEntry or parent::tbx:termSec or parent::tbx:*[contains(.,Grp)]/(parent::tbx:conceptEntry or parent::tbx:termSec)">External Cross Reference must only be found at the conceptEntry or termSec levels.</assert>
         </rule>
         <rule context="basic:xGraphic">
-            <assert test="parent::tbx:conceptEntry">Image must only be found at the conceptEntry level.</assert>
+            <assert test="parent::tbx:conceptEntry or parent::tbx:langSec">Image must only be found at the conceptEntry level.</assert>
         </rule>
     </pattern>
 </schema>

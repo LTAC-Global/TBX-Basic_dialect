@@ -69,8 +69,12 @@
     <!-- Basic Module Rules -->
     <pattern id="module.basic.admin">
         <rule context="tbx:admin[@type='projectSubset']">
-<assert test="parent::tbx:conceptEntry or parent::adminGrp/parent::tbx:conceptEntry or
-    parent::tbx:termSec or parent::tbx:adminGrp/parent::tbx:termSec">Project may only appear at the conceptEntry or termSec levels</assert>
+<assert test="parent::tbx:conceptEntry or parent::tbx:termSec or parent::adminGrp/(parent::tbx:conceptEntry or
+    parent::tbx:termSec)">Project may only appear at the conceptEntry or termSec levels</assert>
+        </rule>
+        <rule context="tbx:admin[@type='source']">
+            <assert test="parent::tbx:conceptEntry or parent::tbx:langSec or parent::tbx:termSec or
+                parent::tbx:adminGrp/(parent::tbx:conceptEntry or parent::tbx:langSec or parent::tbx:termSec)"></assert>
         </rule>
     </pattern>
     <pattern id="module.basic.descrip">
@@ -78,8 +82,8 @@
 <assert test="parent::tbx:termSec or parent::tbx:descripGrp/parent::tbx:termSec">Context appears at the termSec level</assert>
         </rule>
         <rule context="tbx:descrip[@type='definition']">
-<assert test="parent::tbx:conceptEtnry or parent::tbx:descripGrp/parent::tbx:conceptEntry or 
-parent::tbx:langSec or parent::tbx:descripGrp/parent::tbx:langSec">
+            <assert test="parent::tbx:conceptEtnry or parent::tbx:langSec or  
+                parent::tbx:descripGrp/(parent::tbx:conceptEntry or parent::tbx:langSec)">
     Definition may appear at the conceptEntry or langSec levels.
 </assert>
         </rule>
@@ -105,15 +109,15 @@ parent::tbx:langSec or parent::tbx:descripGrp/parent::tbx:langSec">
     </pattern>
     <pattern id="module.basic.ref">
         <rule context="tbx:ref[@type='crossReference']">
-<assert test="parent::tbx:conceptEntry or parent::tbx:termSec">Cross References must only be found at the conceptEntry or termSec levels.</assert>
+            <assert test="parent::tbx:conceptEntry or parent::tbx:termSec or parent::tbx:*[contains(.,Grp)]/(parent::tbx:conceptEntry or parent::tbx:termSec)">Cross References must only be found at the conceptEntry or termSec levels.</assert>
         </rule>
     </pattern>
     <pattern id="module.basic.xref">
         <rule context="tbx:xref[@type='externalCrossReference']">
-<assert test="parent::tbx:termSec or parent::tbx:conceptEntry">External Cross Reference may be used at the termSec level.</assert>
+            <assert test="parent::tbx:conceptEntry or parent::tbx:termSec or parent::tbx:*[contains(.,Grp)]/(parent::tbx:conceptEntry or parent::tbx:termSec)">External Cross Reference must only be found at the conceptEntry or termSec levels.</assert>
         </rule>
         <rule context="tbx:xref[@type='xGraphic']">
-<assert test="parent::tbx:conceptEntry">Image must only be found at the conceptEntry level.</assert>
+            <assert test="parent::tbx:conceptEntry or parent::tbx:langSec">Image must only be found at the conceptEntry or langSec levels.</assert>
         </rule>
     </pattern>
 </schema>
