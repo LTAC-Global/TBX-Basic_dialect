@@ -74,7 +74,7 @@
         </rule>
         <rule context="tbx:admin[@type='source']">
             <assert test="parent::tbx:conceptEntry or parent::tbx:langSec or parent::tbx:termSec or
-                parent::tbx:adminGrp/(parent::tbx:conceptEntry or parent::tbx:langSec or parent::tbx:termSec)"></assert>
+                parent::tbx:descripGrp/(parent::tbx:conceptEntry or parent::tbx:langSec or parent::tbx:termSec)"></assert>
         </rule>
     </pattern>
     <pattern id="module.basic.descrip">
