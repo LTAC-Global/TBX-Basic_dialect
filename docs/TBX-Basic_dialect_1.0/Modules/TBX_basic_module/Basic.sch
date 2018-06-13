@@ -45,8 +45,11 @@
     </pattern>
     
     <pattern id="module.basic.ref">
-        <rule context="basic:crossReference">
-            <assert test="parent::tbx:conceptEntry or parent::tbx:termSec or parent::tbx:*[contains(.,Grp)]/(parent::tbx:conceptEntry or parent::tbx:termSec)">Cross References must only be found at the conceptEntry or termSec levels.</assert>
+        <rule context="basic:relatedConcept">
+            <assert test="parent::tbx:conceptEntry or parent::tbx:*[contains(.,Grp)]/(parent::tbx:conceptEntry)">relatedConcepts must only be found at the conceptEntry level.</assert>
+        </rule>
+        <rule context="basic:relatedTerm">
+            <assert test="parent::tbx:termSec or parent::tbx:*[contains(.,Grp)]/(parent::tbx:termSec)">relatedTerms must only be found at the termSec level.</assert>
         </rule>
     </pattern>
     <pattern id="module.basic.xref">
