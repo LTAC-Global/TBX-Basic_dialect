@@ -21,7 +21,7 @@ value of the name attribute. -->
                 <level>conceptEntry</level>
                 <level>termSec</level>
             </levels>
-            <contents datatype="PCDATA"/>
+            <contents datatype="string"/>
         </adminSpec>
         <termNoteSpec name="partOfSpeech" datcatId="http://www.datcatinfo.net/datcat/DC-396">
             <contents datatype="picklist">
@@ -36,7 +36,7 @@ value of the name attribute. -->
             <levels>
                 <level>conceptEntry</level>
             </levels>
-            <contents datatype="PCDATA"/>
+            <contents datatype="string"/>
         </descripSpec>
     </datCatSet>
 </tbxmd>
