@@ -82,7 +82,7 @@
 <assert test="parent::tbx:termSec or parent::tbx:descripGrp/parent::tbx:termSec">Context appears at the termSec level</assert>
         </rule>
         <rule context="tbx:descrip[@type='definition']">
-            <assert test="parent::tbx:conceptEtnry or parent::tbx:langSec or  
+            <assert test="parent::tbx:conceptEntry or parent::tbx:langSec or  
                 parent::tbx:descripGrp/(parent::tbx:conceptEntry or parent::tbx:langSec)">
     Definition may appear at the conceptEntry or langSec levels.
 </assert>
