@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar xmlns="http://relaxng.org/ns/structure/1.0"
-   datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="urn:iso:std:iso:30042:ed:3.0">
+   datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="urn:iso:std:iso:30042:ed-2">
    <define name="entity.basicText">
       <zeroOrMore>
          <choice>
@@ -1060,7 +1060,7 @@
       <element>
          <anyName>
             <except>
-               <nsName ns="urn:iso:std:iso:30042:ed:3.0"/>
+               <nsName ns="urn:iso:std:iso:30042:ed-2"/>
             </except>
          </anyName>
          <zeroOrMore>
@@ -1068,7 +1068,7 @@
                <attribute>
                   <anyName>
                      <except>
-                        <nsName ns="urn:iso:std:iso:30042:ed:3.0"/>
+                        <nsName ns="urn:iso:std:iso:30042:ed-2"/>
                      </except>
                   </anyName>
                </attribute>

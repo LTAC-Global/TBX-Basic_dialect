@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-model href="https://raw.githubusercontent.com/LTAC-Global/TBX-Basic_dialect/master/DCA/TBXcoreStructV03_TBX-Basic_integrated.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://raw.githubusercontent.com/LTAC-Global/TBX-Basic_dialect/master/DCA/TBX-Basic_DCA.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<tbx type="TBX-Basic" style="dca" xml:lang="en" xmlns="urn:iso:std:iso:30042:ed:3.0">
+<tbx type="TBX-Basic" style="dca" xml:lang="en" xmlns="urn:iso:std:iso:30042:ed-2">
 	<tbxHeader>
 		<fileDesc>
+			<publicationStmt>
+				<p>This is a Publication Statement</p>
+				<p>This is another P of Publication Statement</p>
+			</publicationStmt>
 			<sourceDesc>
 				<p>TBX file, created via MultiTerm Export</p>
 			</sourceDesc>

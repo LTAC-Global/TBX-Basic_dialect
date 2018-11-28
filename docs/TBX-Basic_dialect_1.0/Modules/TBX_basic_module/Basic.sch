@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2"
     xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
-    <ns uri="urn:iso:std:iso:30042:ed:3.0" prefix="tbx" />
+    <ns uri="urn:iso:std:iso:30042:ed-2" prefix="tbx" />
     <ns uri="http://www.tbxinfo.net/ns/basic" prefix="basic" />
     <ns uri="http://www.w3.org/2001/XMLSchema" prefix="xs" />
     
