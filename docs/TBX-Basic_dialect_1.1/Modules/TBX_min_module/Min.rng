@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:teix="http://www.tei-c.org/ns/Examples"
+   datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+   ns="http://www.tbxinfo.net/ns/min">
+   <!-- optional metaType attribute -->
+   <define name="metaType">
+      <optional>
+         <attribute name="metaType">
+            <choice>
+               <value>admin</value>
+               <value>adminNote</value>
+               <value>descrip</value>
+               <value>descripNote</value>
+               <value>ref</value>
+               <value>termNote</value>
+               <value>transac</value>
+               <value>transacNote</value>
+               <value>xref</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <!-- descrip classified elements -->
+   <define name="module.admin">
+      <choice>
+         <element name="customerSubset">
+            <text/>
+         </element>
+      </choice>
+   </define>
+   <define name="module.descrip">
+      <choice>
+         <element name="partOfSpeech">
+            <choice>
+               <value>adjective</value>
+               <value>noun</value>
+               <value>other</value>
+               <value>verb</value>
+               <value>adverb</value>
+            </choice>
+         </element>
+         <element name="subjectField">
+            <documentation xmlns="http://relaxng.org/ns/compatibility/annotations/1.0">
+               (subjectField) A field of special knowledge. Subject fields shall be expressed in
+               plainText, and preferably be selected from a defined set of picklist values. Subject
+               fields shall be specified at the concept (termEntry) level.</documentation>
+            <choice>
+               <text/>
+            </choice>
+         </element>
+      </choice>
+   </define>
+
+   <!-- termNote classified elements -->
+   <define name="module.termNote">
+      <element name="administrativeStatus">
+         <documentation xmlns="http://relaxng.org/ns/compatibility/annotations/1.0">The status of a term within a certain working environment. 
+            The data-category administrativeStatus should be linked, through a target attribute, to a in the back matter that identifies the 
+            administrative organization that determined the status.</documentation>
+         <choice>
+            <value>admittedTerm-admn-sts</value>
+            <value>deprecatedTerm-admn-sts</value>
+            <value>supersededTerm-admn-sts</value>
+            <value>preferredTerm-admn-sts</value>
+         </choice>
+      </element>
+   </define>
+
+   <start>
+      <choice>
+         <ref name="module.admin"/>
+         <ref name="module.descrip"/>
+         <ref name="module.termNote"/>
+      </choice>
+   </start>
+</grammar>

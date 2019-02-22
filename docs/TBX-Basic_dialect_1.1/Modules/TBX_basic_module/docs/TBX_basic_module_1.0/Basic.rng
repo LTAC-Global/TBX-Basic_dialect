@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:teix="http://www.tei-c.org/ns/Examples"
+   datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+   ns="http://www.tbxinfo.net/ns/basic">
+   
+   <!-- optional metaType attribute -->
+   <define name="metaType">
+      <optional>
+         <attribute name="metaType">
+            <choice>
+               <value>admin</value>
+               <value>adminNote</value>
+               <value>descrip</value>
+               <value>descripNote</value>
+               <value>ref</value>
+               <value>termNote</value>
+               <value>transac</value>
+               <value>transacNote</value>
+               <value>xref</value>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   
+   <!-- shared attributes -->
+   <define name="attribute.target.internal">
+      <attribute name="target">
+         <data type="IDREF"/>
+      </attribute>
+   </define>
+   <define name="attribute.target.external">
+      <attribute name="target">
+         <data type="anyURI">
+            <param name="pattern">https?://.+</param>
+         </data>
+      </attribute>
+   </define>
+   
+   <!-- descrip classified elements -->
+   <define name="module.admin">
+      <choice>
+         <element name="projectSubset">
+            <text/>
+         </element>
+         <element name="source">
+            <text/>
+         </element>
+      </choice>
+   </define>
+   <define name="module.descrip">
+      <choice>
+         <element name="context">
+            <text/>
+         </element>
+         <element name="definition">
+            <text/>
+         </element>
+      </choice>
+   </define>
+
+   <define name="module.ref">
+      <choice>
+         <element name="relatedConcept">
+            <text/>
+            <ref name="attribute.target.internal"/>
+         </element>
+         <element name="relatedTerm">
+            <text/>
+            <ref name="attribute.target.internal"/>
+         </element>
+      </choice>   
+   </define>
+
+   <!-- termNote classified elements -->
+   <define name="module.termNote">
+      <choice>
+         <element name="grammaticalGender">
+            <choice>
+               <value>masculine</value>
+               <value>feminine</value>
+               <value>neuter</value>
+               <value>other</value>
+            </choice>
+         </element>
+         <element name="geographicalUsage">
+            <text/>
+         </element>
+         <element name="termLocation">
+            <choice>
+               <value>checkBox</value>
+               <value>comboBox</value>
+               <value>comboBoxElement</value>
+               <value>dialogBox</value>
+               <value>groupBox</value>
+               <value>informativeMessage</value>
+               <value>interactiveMessage</value>
+               <value>menuItem</value>
+               <value>progressBar</value>
+               <value>pushButton</value>
+               <value>radioButton</value>
+               <value>slider</value>
+               <value>spinBox</value>
+               <value>spinBox</value>
+               <value>tab</value>
+               <value>tableText</value>
+               <value>textBox</value>
+               <value>toolTip</value>
+               <value>user-definedType</value>
+            </choice>
+         </element>
+         <element name="termType">
+            <choice>
+               <value>fullForm</value>
+               <value>acronym</value>
+               <value>abbreviation</value>
+               <value>shortForm</value>
+               <value>variant</value>
+               <value>phrase</value>
+            </choice>
+         </element>
+      </choice>
+   </define>
+   <define name="module.transac">
+      <choice>
+         <element name="transactionType">
+            <choice>
+               <value>origination</value>
+               <value>modification</value>
+            </choice>
+         </element>
+      </choice>
+   </define>
+   <define name="module.transacNote">
+      <choice>
+         <element name="responsibility">
+            <text/>
+            <ref name="attribute.target.internal"/>
+         </element>
+      </choice>
+   </define>
+   <define name="module.xref">
+      <choice>
+         <element name="externalCrossReference">
+            <text/>
+            <ref name="attribute.target.external"/>
+         </element>
+         <element name="xGraphic">
+            <text/>
+            <ref name="attribute.target.external"/>
+         </element>
+      </choice>
+   </define>
+
+   <start>
+      <choice>
+         <ref name="module.admin"/>
+         <ref name="module.descrip"/>
+         <ref name="module.ref"/>
+         <ref name="module.termNote"/>
+         <ref name="module.transac"/>
+         <ref name="module.transacNote"/>
+         <ref name="module.xref"/>
+      </choice>
+   </start>
+</grammar>

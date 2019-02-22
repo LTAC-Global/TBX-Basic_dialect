@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/LTAC-Global/TBX_module_description_xml/master/tbxmd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<tbxmd module="basic" ns="http://www.tbxinfo.net/ns/basic"><!-- ns is only applicable to DCT style TBX -->
+    <header>
+        <title>Description of the Basic data category module for TBX</title>
+        <description>TBX-Basic is intended to be the primary dialect of terminology exchange. TBX-Basic was 
+            designed to efficiently store a large quantity of terminology glossaries in a straightforward XML
+            format. It can be used to handle monolingual, bilingual, or multilingual glossaries.</description>
+    </header>
+    <datCatSet>
+        <!--Data-category constraint specifications are arranged in alphabetial order by the
+value of the name attribute. -->
+        <descripSpec name="context" datcatId="http://www.datcatinfo.net/datcat/DC-149">
+            <levels>
+                <level>termSec</level>
+            </levels>
+            <contents datatype="noteText"/>
+        </descripSpec>
+        <refSpec name="crossReference" datcatId="http://www.datcatinfo.net/datcat/DC-164">
+            <levels>
+                <level>conceptEntry</level>
+                <level>termSec</level>
+            </levels>
+            <contents datatype="string"/>
+        </refSpec>
+        <descripSpec name="definition" datcatId="http://www.datcatinfo.net/datcat/DC-168">
+            <levels>
+                <level>conceptEntry</level>
+                <level>langSec</level>
+            </levels>
+            <contents datatype="noteText"/>
+        </descripSpec>
+        <xrefSpec name="externalCrossReference" datcatId="http://www.datcatinfo.net/datcat/DC-226">
+            <levels>
+                <level>conceptEntry</level>
+                <level>termSec</level>
+            </levels>
+            <contents datatype="string"/>
+        </xrefSpec>
+        <termNoteSpec name="geographicalUsage" datcatId="http://www.datcatinfo.net/datcat/DC-243">
+            <contents datatype="string"/>
+        </termNoteSpec>
+        <termNoteSpec name="grammaticalGender" datcatId="http://www.datcatinfo.net/datcat/DC-245">
+            <contents datatype="picklist">
+                <value>masculine</value>
+                <value>feminine</value>
+                <value>neuter</value>
+                <value>other</value>
+            </contents>
+        </termNoteSpec>
+        <adminSpec name="projectSubset" datcatId="http://www.datcatinfo.net/datcat/DC-406">
+            <levels>
+                <level>conceptEntry</level>
+                <level>termSec</level>
+            </levels>
+            <contents datatype="string"/>
+        </adminSpec>
+        <transacNoteSpec name="responsibility" datcatId="http://www.datcatinfo.net/datcat/DC-451">
+            <levels>
+                <level>conceptEntry</level>
+                <level>langSec</level>
+                <level>termSec</level>
+            </levels>
+            <contents datatype="string"/>
+        </transacNoteSpec>
+        <adminSpec name="source" datcatId="http://www.datcatinfo.net/datcat/DC-471">
+            <levels>
+                <level>conceptEntry</level>
+                <level>langSec</level>
+                <level>termSec</level>
+            </levels>
+            <contents datatype="string"/>
+        </adminSpec>
+        <termNoteSpec name="termLocation" datcatId="http://www.datcatinfo.net/datcat/DC-1823">
+            <contents datatype="picklist">
+                	<value>checkBox</value>
+                	<value>comboBox</value>
+                	<value>comboBoxElement</value>
+                	<value>dialogBox</value>
+                	<value>groupBox</value>
+                	<value>informativeMessage</value>
+                	<value>interactiveMessage</value>
+                	<value>menuItem</value>
+                	<value>progressBar</value>
+                	<value>pushButton</value>
+                	<value>radioButton</value>
+                	<value>slider</value>
+                	<value>spinBox</value>
+                	<value>tab</value>
+                	<value>tableText</value>
+                	<value>textBox</value>
+                	<value>toolTip</value>
+                	<value>user-definedType</value>
+            </contents>
+        </termNoteSpec>
+        <termNoteSpec name="termType" datcatId="http://www.datcatinfo.net/datcat/DC-2677">
+            <contents datatype="picklist">
+                <value>fullForm</value>
+                <value>acronym</value>
+                <value>abbreviation</value>
+                <value>shortForm</value>
+                <value>variant</value>
+                <value>phrase</value>
+            </contents>
+        </termNoteSpec>
+        <transacSpec name="transactionType" datcatId="http://www.datcatinfo.net/datcat/DC-1689">
+            <levels>
+                <level>conceptEntry</level>
+                <level>langSec</level>
+                <level>termSec</level>
+            </levels>
+            <contents datatype="picklist">
+                <value>origination</value>
+                <value>modification</value>
+            </contents>
+        </transacSpec>
+        <xrefSpec name="xGraphic" datcatId="http://www.datcatinfo.net/datcat/DC-2920">
+            <levels>
+                <level>conceptEntry</level>
+                <level>langSec</level>
+            </levels>
+            <contents datatype="string"/>
+        </xrefSpec>
+    </datCatSet>
+</tbxmd>
