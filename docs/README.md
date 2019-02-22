@@ -4,7 +4,7 @@
 
 ### Changelog
 - Updated Basic module (in integrated schema and Modules directory)
--
+
 #### [Definition](https://ltac-global.github.io/TBX-Basic_dialect/TBX-Basic_dialect_1.1/TBX-Basic%20Definition.pdf)
 #### [Download](https://ltac-global.github.io/TBX-Basic_dialect/TBX-Basic_dialect_1.1.zip)
 
