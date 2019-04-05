@@ -131,7 +131,9 @@
       <choice>
          <element name="responsibility">
             <text/>
-            <ref name="attribute.target.internal"/>
+            <optional>
+               <ref name="attribute.target.internal"/>
+            </optional>
          </element>
       </choice>
    </define>
