@@ -1,8 +1,0 @@
-[submodule "Modules/TBX_basic_module"]
-	path = Modules/TBX_basic_module
-	url = https://github.com/LTAC-Global/TBX_basic_module.git
-	branch = master
-[submodule "Modules/TBX_min_module"]
-	path = Modules/TBX_min_module
-	url = https://github.com/LTAC-Global/TBX_min_module.git
-	branch = master
