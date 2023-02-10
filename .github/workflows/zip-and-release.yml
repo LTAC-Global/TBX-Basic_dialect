@@ -39,8 +39,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          zip -r TBX-Basic_dialect_${{ github.ref_name }}.zip DCA DCT *.pdf *.docx Modules -x Modules/*/docs/\*
-
+          zip -r TBX-Basic_dialect_${{ github.ref_name }}.zip DCA DCT *.pdf *.docx Modules -x Modules/*/docs/\* -x Modules/*/.git/\*
+ 
       - name: upload windows artifact
         uses: actions/upload-release-asset@v1
         env:
