@@ -31,7 +31,6 @@ jobs:
           prerelease: false
           release_name: "TBX-Basic_dialect"
           tag_name: ${{ github.ref_name }}
-        env:
           GITHUB_TOKEN: ${{ github.token }}
 
       # Runs a set of commands using the runners shell
