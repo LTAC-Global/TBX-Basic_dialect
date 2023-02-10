@@ -30,6 +30,7 @@ jobs:
         with:
           draft: false
           prerelease: false
+          makeLatest: true
           name: "TBX-Basic_dialect"
           tag: ${{ github.ref }}
 
