@@ -30,7 +30,7 @@ jobs:
           draft: false
           prerelease: false
           name: "TBX-Basic_dialect"
-          
+          tag: ${{ github.ref }}
 
 
       # Runs a set of commands using the runners shell
