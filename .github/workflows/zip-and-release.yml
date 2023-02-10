@@ -32,6 +32,7 @@ jobs:
           draft: false
           prerelease: false
           makeLatest: true
+          bodyFile: CHANGELOG.md
           name: "TBX-Basic_dialect"
           tag: ${{ github.ref }}
 
