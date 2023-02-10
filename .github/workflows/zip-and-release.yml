@@ -23,7 +23,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
+        with:
+          submodules: recursive
       - name: release
         uses: ncipollo/release-action@v1
         id: create_release
@@ -31,6 +32,7 @@ jobs:
           draft: false
           prerelease: false
           makeLatest: true
+          bodyFile: CHANGELOG.md
           name: "TBX-Basic_dialect"
           tag: ${{ github.ref }}
 
@@ -38,8 +40,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          zip -r TBX-Basic_dialect_${{ github.ref_name }}.zip DCA DCT *.pdf *.docx
-
+          zip -r TBX-Basic_dialect_${{ github.ref_name }}.zip DCA DCT *.pdf *.docx Modules -x Modules/*/docs/\* -x Modules/*/.git
+ 
       - name: upload windows artifact
         uses: actions/upload-release-asset@v1
         env:
@@ -50,3 +52,13 @@ jobs:
           asset_name: TBX-Basic_dialect_${{ github.ref_name }}.zip
           asset_content_type: application/zip
         
+
+      - name: upload windows artifact
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: "./TBX-Basic Definition.pdf"
+          asset_name: "TBX-Basic_Definition_${{ github.ref_name }}.pdf"
+          asset_content_type: application/zip
